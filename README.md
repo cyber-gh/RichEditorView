@@ -69,6 +69,9 @@ This is because the function is: `public func getSelectedText(handler: @escaping
 ### Credits and License
 
 License is under BSD-3 Clause
+
 cjwirth - Original iOS-RichEditorView Creator
+
 C. Bess - WKWebView Support
+
 Forked from YoomamaFTW
