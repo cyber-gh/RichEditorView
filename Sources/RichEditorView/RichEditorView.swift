@@ -5,8 +5,10 @@
 //  Copyright © 2019 YoomamaFTW. All rights reserved.
 //
 
-import UIKit
-import WebKit
+
+    import UIKit
+    import WebKit
+
 
 /// RichEditorDelegate defines callbacks for the delegate of the RichEditorView
 @objc public protocol RichEditorDelegate: class {
@@ -401,9 +403,7 @@ public class RichEditorWebView: WKWebView {
     
     /// Checks if cursor is in a table element. If so, return true so that you can add menu items accordingly.
     public func isCursorInTable() {
-        runJS("RE.isCursorInTable") { r in
-            return r
-        }
+        runJS("RE.isCursorInTable")
     }
     
     public func addRowToTable() { runJS("RE.addRowToTable()") }

@@ -4,7 +4,9 @@
 //  Created by Caesar Wirth on 4/2/15.
 //  Copyright (c) 2015 Caesar Wirth. All rights reserved.
 //
-import UIKit
+    import UIKit
+    import WebKit
+
 
 /// A RichEditorOption object is an object that can be displayed in a RichEditorToolbar.
 /// This protocol is proviced to allow for custom actions not provided in the RichEditorOptions enum.
