@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RichEditorViewSwift"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Rich editor view"
   s.homepage     = "https://github.com/cyber-gh/RichEditorView"
   s.source       = { :git => "https://github.com/cyber-gh/RichEditorView.git", :tag => s.version }
