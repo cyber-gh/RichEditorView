@@ -142,8 +142,33 @@ public class RichEditorWebView: WKWebView {
         setup()
     }
     
+    public func injectHtmlFiles(subdirectory: String? = nil) -> Bool {
+
+        let fileNames = ["assert.js", "normalize.css", "rich_editor.js", "rich_editor_tests.html", "rich_editor_tests.js",
+                         "style.css", "rich_editor.html"]
+
+        var cnt = 0
+        fileNames.forEach { s in
+            let sp = s.split(separator: ".").map({ String($0) })
+            let name = sp.first!
+            let ext = sp.last!
+
+            if let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory: subdirectory) {
+                if #available(iOS 9.0, *) {
+                    webView.loadFileURL(url, allowingReadAccessTo: url)
+                } else {
+                }
+                cnt += 1
+            }
+        }
+
+        return cnt == fileNames.count
+    }
+    
     private func setup() {
         // configure webview
+        
+        injectHtmlFiles()
         webView.frame = bounds
         webView.navigationDelegate = self
         webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

@@ -4,8 +4,8 @@
 //  Created by Caesar Wirth on 4/2/15.
 //  Copyright (c) 2015 Caesar Wirth. All rights reserved.
 //
-    import UIKit
-    import WebKit
+import UIKit
+import WebKit
 
 
 /// RichEditorToolbarDelegate is a protocol for the RichEditorToolbar.
@@ -95,6 +95,8 @@
         super.init(coder: aDecoder)
         setup()
     }
+    
+    
     
     private func setup() {
         autoresizingMask = .flexibleWidth

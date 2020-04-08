@@ -161,7 +161,7 @@ public enum RichEditorDefaultOption: RichEditorOption {
         case .bold: toolbar.editor?.bold()
         case .italic: toolbar.editor?.italic()
         case .underline: toolbar.editor?.underline()
-        case .checkbox: fatalError("Not implemented")
+        case .checkbox: toolbar.editor?.setCheckbox()
         case .subscript: toolbar.editor?.subscriptText()
         case .superscript: toolbar.editor?.superscript()
         case .strike: toolbar.editor?.strikethrough()
