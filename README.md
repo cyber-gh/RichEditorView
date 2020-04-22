@@ -14,10 +14,8 @@ Table of Contents:
 ### Usage Instructions:
 
 You can import it only using Cocoapods
-I am aware of the current problems with the missing resources.
-Sadly, they can't be fixed until the SPM adds support for bundling resources. Till then you'll have to add those manually.<br>
-Here it is a sample app that demonstrates it.<br>
-https://github.com/cyber-gh/RichEditorTestApp
+
+
 ```
 pod "RichEditorViewSwift"
 ```
@@ -26,6 +24,12 @@ pod "RichEditorViewSwift"
 import RichEditorViewSwift
 ```
 
+
+
+I am aware of the current problems with the missing resources.
+Sadly, they can't be fixed until the SPM adds support for bundling resources. Till then you'll have to add those manually.<br>
+Here it is a sample app that demonstrates it.<br>
+https://github.com/cyber-gh/RichEditorTestApp
 No unit testing is included here. You can find it in cjwirth/RichEditorView
 
 ---
